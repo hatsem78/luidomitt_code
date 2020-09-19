@@ -1,0 +1,78 @@
+<h3>Update Driver</h3>
+<div [hidden]="submitted" style="width: 400px">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="name">First Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstName"
+        required
+        [(ngModel)]="driver.firstName"
+        name="firstName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="name">Last Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastName"
+        required
+        [(ngModel)]="driver.lastName"
+        name="lastName"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="emailId">Email</label>
+      <input
+        type="text"
+        class="form-control"
+        id="emailId"
+        required
+        [(ngModel)]="driver.emailId"
+        name="emailId"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="patent">Patent</label>
+      <input
+        type="text"
+        class="form-control"
+        id="patent"
+        required
+        [(ngModel)]="driver.patent"
+        name="patent"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="modelo">Modelo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="modelo"
+        required
+        [(ngModel)]="driver.modelo"
+        name="modelo"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="years">Years</label>
+      <input
+        type="text"
+        class="form-control"
+        id="years"
+        required
+        [(ngModel)]="driver.years"
+        name="years"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>

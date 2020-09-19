@@ -1,0 +1,42 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Driver List</h2>
+  </div>
+  <div class="panel-body">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>Patent</th>
+          <th>Modelo</th>
+          <th>Years</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let driver of drivers">
+          <td>{{ driver.firstName }}</td>
+          <td>{{ driver.lastName }}</td>
+          <td>{{ driver.emailId }}</td>
+          <td>{{ driver.patent }}</td>
+          <td>{{ driver.modelo }}</td>
+          <td>{{ driver.years }}</td>
+          <td>
+            <button (click)="deleteDriver(driver.id)" class="btn btn-danger">
+              Delete
+            </button>
+            <button
+              (click)="driverDetails(driver.id)"
+              class="btn btn-info"
+              style="margin-left: 10px"
+            >
+              Details
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
