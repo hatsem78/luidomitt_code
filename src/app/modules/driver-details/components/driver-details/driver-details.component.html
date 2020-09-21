@@ -1,7 +1,8 @@
 <h2>Driver Details</h2>
 
 <hr />
-<div *ngIf="Driver">
+
+<div>
   <div>
     <label><b>First Name: </b></label> {{ driver.firstName }}
   </div>
@@ -23,6 +24,6 @@
 </div>
 
 <br />
+<button (click)="list()" class="btn btn-primary">Back to Driver List</button>
 <br />
-<button (click)="list()" class="btn btn-primary">Back to Driver List</button
-><br />
+<br />

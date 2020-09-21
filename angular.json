@@ -60,7 +60,7 @@
                 }
               ]
             },
-            "testing": {
+            "test": {
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -133,10 +133,10 @@
               "devServerTarget": "angular-starter-template:serve:production"
             },
             "stage": {
-              "devServerTarget": "digimex-admin:serve:stage"
+              "devServerTarget": "angular-starter-template:serve:stage"
             },
             "testing": {
-              "devServerTarget": "digimex-admin:serve:testing"
+              "devServerTarget": "angular-starter-template:serve:testing"
             }
           }
         }

@@ -1,3 +1,5 @@
 export const environment = {
-  testing: false,
+  production: false,
+  title: "Dev Environment Heading",
+  apiURL: "http://dev.example.com",
 };

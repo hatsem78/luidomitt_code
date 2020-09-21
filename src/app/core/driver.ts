@@ -1,3 +1,7 @@
+/**
+ * Clase que representa el objeto driver
+ */
+
 export class Driver {
   id: number;
   firstName: string;

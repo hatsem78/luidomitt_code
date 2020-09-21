@@ -13,12 +13,24 @@ const routes: Routes = [
     component: GuestLayoutComponent, // this is the component with the <router-outlet> in the template
     children: [
       {
+        path: "", // child route path
+        component: DriverListComponent, // child route component that the router renders
+      },
+      {
         path: "drivers", // child route path
         component: DriverListComponent, // child route component that the router renders
       },
       {
         path: "add",
         component: DriverCreateComponent, // another child route component that the router renders
+      },
+      {
+        path: "update/:id",
+        component: DriverUpdateComponent, // another child route component that the router renders
+      },
+      {
+        path: "update/:id",
+        component: DriverUpdateComponent, // another child route component that the router renders
       },
     ],
   },

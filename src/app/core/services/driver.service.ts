@@ -1,3 +1,5 @@
+import { environment } from "./../../../environments/environment";
+import { AppComponent } from "./../../app.component";
 import { Driver } from "./../driver";
 import { Injectable } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
@@ -7,16 +9,15 @@ import { Observable } from "rxjs";
 @Injectable({
   providedIn: "root",
 })
-@Injectable({
-  providedIn: "root",
-})
-export class DriverService {
-  private baseUrl = "http://localhost:8080/springboot-crud-rest/api/v1/drivers";
-  private driver_local = [];
 
-  constructor(private http: HttpClient) {
-    this.driver_local = [];
-  }
+/**
+ * Rest-api backend con el cual interactua, dependindo si es prod o local
+ * la variable baseUrl se carga denamicamente, al ser local ejecuta un rest-api mock
+ */
+export class DriverService {
+  private baseUrl = environment.apiURL;
+
+  constructor(private http: HttpClient) {}
 
   getDriver(id: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${id}`);

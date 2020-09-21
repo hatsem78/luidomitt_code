@@ -1,5 +1,5 @@
 <h3>Create Driver</h3>
-<div [hidden]="submitted" style="width: 400px">
+<div [hidden]="submitted" style="width: 300px">
   <form (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">First Name</label>
@@ -73,7 +73,8 @@
       />
     </div>
 
-    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="submit" class="btn btn-success text-left">Submit</button>
+    <button (click)="gotoList()" class="btn btn-primary">Cancel</button>
   </form>
 </div>
 

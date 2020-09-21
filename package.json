@@ -7,7 +7,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "generate-mock-api": "node generateData.js > src/app/shared/api-mock/database.json",
+    "server-api": "json-server --watch src/app/shared/api-mock/database.json"
   },
   "private": true,
   "dependencies": {
@@ -20,7 +22,9 @@
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
     "bootstrap": "^4.5.2",
+    "faker": "^5.1.0",
     "jquery": "^3.5.1",
+    "json-server": "^0.16.1",
     "rxjs": "^6.5.5",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

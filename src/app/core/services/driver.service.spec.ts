@@ -1,8 +1,8 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { DriverService } from './driver.service';
+import { DriverService } from "./driver.service";
 
-describe('DriverService', () => {
+describe("DriverService", () => {
   let service: DriverService;
 
   beforeEach(() => {
@@ -10,7 +10,7 @@ describe('DriverService', () => {
     service = TestBed.inject(DriverService);
   });
 
-  it('should be created', () => {
+  it("should be created", () => {
     expect(service).toBeTruthy();
   });
 });
